@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+	
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><
+<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>NEFTE</title>
+		<link rel="stylesheet" href="css/output.css" />
+		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href= "https://use.fontawesome.com/releases/v5.11.2/css/all.css" >
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+		<link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+
+	<body>
+	
+
+	
+
+		<!-- header -->
+		<div class="fixed w-full left-0 top-0 shadow z-10">
+			<div class="bg-white flex items-center px-4 sm:px-20 xl:px-4">
+				<div class="w-full max-w-7xl mx-auto flex justify-between items-center gap-5 sm:gap-0 py-4 xl:px-0">
+					<div class="flex items-center gap-8 xl:pl-2">
+						<a href="index.html" class="flex-shrink-0">
+							<svg class="w-36 text-primary" viewBox="0 0 101 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M23 9.5L14 4.5L5 9.5V19.5L14 24.5L23 19.5V9.5ZM14 6.79L19.91 10.07L16.9 11.74C16.17 10.98 15.14 10.5 14 10.5C12.86 10.5 11.83 10.98 11.1 11.74L8.09 10.07L14 6.79ZM13 21.66L7 18.33V11.76L10.13 13.5C10.04 13.81 10 14.15 10 14.5C10 16.36 11.27 17.93 13 18.37V21.66ZM12 14.5C12 13.4 12.9 12.5 14 12.5C15.1 12.5 16 13.4 16 14.5C16 15.6 15.1 16.5 14 16.5C12.9 16.5 12 15.6 12 14.5ZM15 21.66V18.38C16.73 17.94 18 16.37 18 14.51C18 14.16 17.96 13.82 17.87 13.5L21 11.76V18.33L15 21.66Z"
+									fill="currentColor"
+								/>
+								<path
+									d="M31.9045 21.1828C30.9295 21.1828 30.4421 20.675 30.4421 19.6595V8.08228C30.4421 7.56774 30.5639 7.17506 30.8077 6.90425C31.0649 6.63344 31.4035 6.49803 31.8232 6.49803C32.1753 6.49803 32.4528 6.5725 32.656 6.72145C32.8591 6.85686 33.0893 7.08705 33.3465 7.41202L39.9273 15.8004V8.00104C39.9273 6.99903 40.4147 6.49803 41.3896 6.49803C42.3646 6.49803 42.852 6.99903 42.852 8.00104V19.7204C42.852 20.1673 42.7369 20.5261 42.5067 20.7969C42.2765 21.0542 41.9651 21.1828 41.5724 21.1828C41.1933 21.1828 40.8886 21.1083 40.6584 20.9594C40.4418 20.8104 40.2048 20.5735 39.9476 20.2485L33.3668 11.8601V19.6595C33.3668 20.675 32.8794 21.1828 31.9045 21.1828ZM47.3799 21C46.2831 21 45.7347 20.4516 45.7347 19.3548V8.32601C45.7347 7.22922 46.2831 6.68083 47.3799 6.68083H54.4684C55.2944 6.68083 55.7074 7.08705 55.7074 7.89948C55.7074 8.72546 55.2944 9.13844 54.4684 9.13844H48.7407V12.4897H54.0013C54.8408 12.4897 55.2605 12.9027 55.2605 13.7287C55.2605 14.5547 54.8408 14.9677 54.0013 14.9677H48.7407V18.5424H54.4684C55.2944 18.5424 55.7074 18.9486 55.7074 19.761C55.7074 20.587 55.2944 21 54.4684 21H47.3799ZM59.6369 21.1828C59.1224 21.1828 58.7229 21.0406 58.4386 20.7563C58.1677 20.4719 58.0323 20.0589 58.0323 19.5173V8.32601C58.0323 7.22922 58.5807 6.68083 59.6775 6.68083H66.6238C67.4498 6.68083 67.8628 7.08705 67.8628 7.89948C67.8628 8.72546 67.4498 9.13844 66.6238 9.13844H61.1805V12.6319H66.177C67.0165 12.6319 67.4363 13.0381 67.4363 13.8506C67.4363 14.6765 67.0165 15.0895 66.177 15.0895H61.1805V19.5173C61.1805 20.6276 60.666 21.1828 59.6369 21.1828ZM74.8504 21.1828C74.3358 21.1828 73.9432 21.0406 73.6724 20.7563C73.4015 20.4719 73.2661 20.0725 73.2661 19.5579V9.28062H69.6711C68.791 9.28062 68.3509 8.84732 68.3509 7.98072C68.3509 7.11413 68.791 6.68083 69.6711 6.68083H80.0093C80.8895 6.68083 81.3296 7.11413 81.3296 7.98072C81.3296 8.84732 80.8895 9.28062 80.0093 9.28062H76.4143V19.5579C76.4143 20.0725 76.2789 20.4719 76.0081 20.7563C75.7508 21.0406 75.3649 21.1828 74.8504 21.1828ZM84.3322 21C83.2354 21 82.6871 20.4516 82.6871 19.3548V8.32601C82.6871 7.22922 83.2354 6.68083 84.3322 6.68083H91.4207C92.2467 6.68083 92.6597 7.08705 92.6597 7.89948C92.6597 8.72546 92.2467 9.13844 91.4207 9.13844H85.6931V12.4897H90.9536C91.7931 12.4897 92.2129 12.9027 92.2129 13.7287C92.2129 14.5547 91.7931 14.9677 90.9536 14.9677H85.6931V18.5424H91.4207C92.2467 18.5424 92.6597 18.9486 92.6597 19.761C92.6597 20.587 92.2467 21 91.4207 21H84.3322Z"
+									fill="currentColor"
+								/>
+							</svg>
+						</a>
+						<!-- search -->
+						<!-- <div class="hidden xl:flex">
+							<input type="text" placeholder="Search here" class="flex items-center border border-gray-200 bg-white rounded-lg px-4 py-2 focus:outline-none" />
+						</div> -->
+						<!-- search end -->
+					</div>
+
+					<!-- manu 
+					<ul class="hidden lg:flex gap-5 items-center font-semibold space-x-6 lg:space-x-2 xl:space-x-3">
+						<li class="group relative">
+							<a href="index.html" class="p-4 group-hover:text-primary transition">Home</a>
+							<ul class="bg-white shadow rounded-lg opacity-0 invisible text-gray-700 group-hover:opacity-100 group-hover:visible hover:transition-all duration-300 mt-4 group-hover:mt-0 absolute left-0 top-10 w-52 p-4 space-y-3">
+								<li class="hover:ml-2 duration-500 transition-all rounded-lg p-2">
+									<a href="index.html" class="hover:text-primary transition"> Home page 1 </a>
+								</li>
+								<li class="hover:ml-2 duration-500 transition-all rounded-lg p-2">
+									<a href="home-2.html" class="hover:text-primary transition"> Home page 2 </a>
+								</li>
+								<li class="hover:ml-2 duration-500 transition-all rounded-lg p-2">
+									<a href="home-3.html" class="hover:text-primary transition"> Home page 3 </a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="explore.html" class="hover:text-primary transition">Explore</a>
+						</li>
+
+						<li class="group relative">
+							<a href="#" class="p-4 group-hover:text-primary transition">Pages</a>
+							<ul class="bg-white shadow rounded-lg opacity-0 invisible text-gray-700 group-hover:opacity-100 group-hover:visible hover:transition-all duration-300 mt-4 group-hover:mt-0 absolute left-0 top-10 w-48 p-4 space-y-1">
+								<li class="text-sm hover:text-primary hover:ml-2 duration-500 transition-all rounded-lg p-2">
+									<a href="author-profile.html">Author Profile</a>
+								</li>
+								<li class="text-sm hover:text-primary hover:ml-2 duration-500 transition-all rounded-lg p-2">
+									<a href="about.html">About Us</a>
+								</li>
+								<li class="text-sm hover:text-primary hover:ml-2 duration-500 transition-all rounded-lg p-2">
+									<a href="activity.html">Activity</a>
+								</li>
+								<li class="text-sm hover:text-primary hover:ml-2 duration-500 transition-all rounded-lg p-2">
+									<a href="ranking.html">Ranking</a>
+								</li>
+								<li class="text-sm hover:text-primary hover:ml-2 duration-500 transition-all rounded-lg p-2">
+									<a href="wallet.html">Wallet</a>
+								</li>
+								<li class="text-sm hover:text-primary hover:ml-2 duration-500 transition-all rounded-lg p-2">
+									<a href="blog.html">Blog</a>
+								</li>
+								<li class="text-sm hover:text-primary hover:ml-2 duration-500 transition-all rounded-lg p-2">
+									<a href="blog-view.html"> Blog View</a>
+								</li>
+								<li class="text-sm hover:text-primary hover:ml-2 duration-500 transition-all rounded-lg p-2">
+									<a href="login.html">Login</a>
+								</li>
+								<li class="text-sm hover:text-primary hover:ml-2 duration-500 transition-all rounded-lg p-2">
+									<a href="register.html">Register</a>
+								</li>
+								<li class="text-sm hover:text-primary hover:ml-2 duration-500 transition-all rounded-lg p-2">
+									<a href="upload-enfty.html">Upload Enfty</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="contact.html" class="hover:text-primary transition">Contact</a>
+						</li>
+
+						<!-- connect wallet -->
+						<div class="hidden lg:flex items-center gap-4 xl:gap-8">
+							<a href="https://bscscan.com/address/0x22B9d593eEaaAC4DA6eB7B48C05ceAe34cCDda3E#code" class="header-btn"> Smart Contract </a>
+							<button id="connectWalletbtn" class="header-btn"> Connect Wallet </button>
+						</div>
+						<!-- connect wallet end -->
+					</ul> 
+					<!-- manu end -->
+				</div>
+
+				<!-- icon wrapper -->
+				<div class="flex gap-5">
+					<!-- search icon -->
+					<!-- <div>
+						<button class="w-10 h-10 flex lg:hidden justify-center items-center shadow rounded-full text-xl hover:text-primary font-medium open-search">
+							<i class="las la-search"></i>
+						</button>
+					</div> -->
+					<!-- search icon end -->
+
+					<!-- wallet icon -->
+					<div  class="buttons-upper flex gap-3">
+						<a href="" class="smart w-40 h-10 flex lg:hidden justify-center items-center shadow rounded-full hover:text-primary font-medium">
+							Smart Contract
+						</a>
+						<button class="wallet w-40  h-10 flex lg:hidden justify-center items-center shadow rounded-full  hover:text-primary font-medium">
+							Connect Wallet
+						</button>
+					</div>
+					<!-- wallet icon end -->
+
+					<!-- mobile bar -->
+					<!-- <button id="open-menu" class="w-10 h-10 flex lg:hidden justify-center items-center shadow rounded-full text-xl hover:text-primary font-medium">
+						<i class="las la-bars"></i>
+					</button> -->
+					<!-- mobile bar end -->
+				</div>
+				<!-- icon wrapper end -->
+
+			
+
+				<!-- mobile menu -->
+				<div id="menu-wrapper" class="hidden fixed inset-0 bg-gray-200 bg-opacity-30 w-full h-screen">
+					<div class="w-80 h-full overflow-y-auto bg-white p-5 relative">
+						<div id="close-menu" class="absolute top-5 right-5 text-2xl cursor-pointer"><i class="las la-times-circle"></i></div>
+						<a href="index.html" class="">
+							<svg class="w-24 text-primary" viewBox="0 0 101 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M23 9.5L14 4.5L5 9.5V19.5L14 24.5L23 19.5V9.5ZM14 6.79L19.91 10.07L16.9 11.74C16.17 10.98 15.14 10.5 14 10.5C12.86 10.5 11.83 10.98 11.1 11.74L8.09 10.07L14 6.79ZM13 21.66L7 18.33V11.76L10.13 13.5C10.04 13.81 10 14.15 10 14.5C10 16.36 11.27 17.93 13 18.37V21.66ZM12 14.5C12 13.4 12.9 12.5 14 12.5C15.1 12.5 16 13.4 16 14.5C16 15.6 15.1 16.5 14 16.5C12.9 16.5 12 15.6 12 14.5ZM15 21.66V18.38C16.73 17.94 18 16.37 18 14.51C18 14.16 17.96 13.82 17.87 13.5L21 11.76V18.33L15 21.66Z"
+									fill="currentColor"
+								/>
+								<path
+									d="M31.9045 21.1828C30.9295 21.1828 30.4421 20.675 30.4421 19.6595V8.08228C30.4421 7.56774 30.5639 7.17506 30.8077 6.90425C31.0649 6.63344 31.4035 6.49803 31.8232 6.49803C32.1753 6.49803 32.4528 6.5725 32.656 6.72145C32.8591 6.85686 33.0893 7.08705 33.3465 7.41202L39.9273 15.8004V8.00104C39.9273 6.99903 40.4147 6.49803 41.3896 6.49803C42.3646 6.49803 42.852 6.99903 42.852 8.00104V19.7204C42.852 20.1673 42.7369 20.5261 42.5067 20.7969C42.2765 21.0542 41.9651 21.1828 41.5724 21.1828C41.1933 21.1828 40.8886 21.1083 40.6584 20.9594C40.4418 20.8104 40.2048 20.5735 39.9476 20.2485L33.3668 11.8601V19.6595C33.3668 20.675 32.8794 21.1828 31.9045 21.1828ZM47.3799 21C46.2831 21 45.7347 20.4516 45.7347 19.3548V8.32601C45.7347 7.22922 46.2831 6.68083 47.3799 6.68083H54.4684C55.2944 6.68083 55.7074 7.08705 55.7074 7.89948C55.7074 8.72546 55.2944 9.13844 54.4684 9.13844H48.7407V12.4897H54.0013C54.8408 12.4897 55.2605 12.9027 55.2605 13.7287C55.2605 14.5547 54.8408 14.9677 54.0013 14.9677H48.7407V18.5424H54.4684C55.2944 18.5424 55.7074 18.9486 55.7074 19.761C55.7074 20.587 55.2944 21 54.4684 21H47.3799ZM59.6369 21.1828C59.1224 21.1828 58.7229 21.0406 58.4386 20.7563C58.1677 20.4719 58.0323 20.0589 58.0323 19.5173V8.32601C58.0323 7.22922 58.5807 6.68083 59.6775 6.68083H66.6238C67.4498 6.68083 67.8628 7.08705 67.8628 7.89948C67.8628 8.72546 67.4498 9.13844 66.6238 9.13844H61.1805V12.6319H66.177C67.0165 12.6319 67.4363 13.0381 67.4363 13.8506C67.4363 14.6765 67.0165 15.0895 66.177 15.0895H61.1805V19.5173C61.1805 20.6276 60.666 21.1828 59.6369 21.1828ZM74.8504 21.1828C74.3358 21.1828 73.9432 21.0406 73.6724 20.7563C73.4015 20.4719 73.2661 20.0725 73.2661 19.5579V9.28062H69.6711C68.791 9.28062 68.3509 8.84732 68.3509 7.98072C68.3509 7.11413 68.791 6.68083 69.6711 6.68083H80.0093C80.8895 6.68083 81.3296 7.11413 81.3296 7.98072C81.3296 8.84732 80.8895 9.28062 80.0093 9.28062H76.4143V19.5579C76.4143 20.0725 76.2789 20.4719 76.0081 20.7563C75.7508 21.0406 75.3649 21.1828 74.8504 21.1828ZM84.3322 21C83.2354 21 82.6871 20.4516 82.6871 19.3548V8.32601C82.6871 7.22922 83.2354 6.68083 84.3322 6.68083H91.4207C92.2467 6.68083 92.6597 7.08705 92.6597 7.89948C92.6597 8.72546 92.2467 9.13844 91.4207 9.13844H85.6931V12.4897H90.9536C91.7931 12.4897 92.2129 12.9027 92.2129 13.7287C92.2129 14.5547 91.7931 14.9677 90.9536 14.9677H85.6931V18.5424H91.4207C92.2467 18.5424 92.6597 18.9486 92.6597 19.761C92.6597 20.587 92.2467 21 91.4207 21H84.3322Z"
+									fill="currentColor"
+								/>
+							</svg>
+						</a>
+
+					
+					</div>
+				</div>
+				<!-- mobile menu end -->
+			</div>
+		</div>
+		<!-- header end -->
+
+		<!-- banner -->
+		<div class="bg-gradient-to-tr from-white to-primary-light mt-10">
+			<div class="w-full max-w-7xl mx-auto grid grid-cols-2 gap-5 py-20 px-4 sm:px-20 xl:px-4">
+				<div class="col-span-2 md:col-span-1 place-self-center">
+					<h1 class="text-2xl sm:text-3xl md:text-2xl lg:text-4xl xl:text-5xl !leading-normal text-gray-800 font-semibold mb-5">
+						Get 200%
+						<br class="hidden md:block" />
+						Profit in BNB
+					</h1>
+					<p class="text-base lg:text-xl text-gray-500">
+						
+						Basic interest rate:
+						1% every 24 hrs (+0,1041% hourly)
+						Personal hold-bonus:
+						+0.1% for every 24 hrs without withdraw
+						Contract total amount bonus:
+						+0.1% for every 500 BNB on platform address balance.</p>
+					<div class="flex gap-8 mt-8">
+						<a href="" class="bg-primary hover:bg-primary-dark hover:text-white transition duration-500 text-white rounded-lg px-8 py-3 inline-block">Presentation</a>
+						
+					</div>
+				</div>
+
+				<div class="col-span-2 md:col-span-1 row-start-1 md:row-auto">
+					<img src="img/undraw_social_dashboard_re_ocbd.svg" class="w-full object-cover" />
+				</div>
+			</div>
+			<div class="container">
+				<div class="card">
+					<h2>Contract Balance</h2>
+					<p>$10,000</p>
+				</div>
+		
+				<div class="card">
+					<h2>Total Withdrawal</h2>
+					<p>$5,000</p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- banner end -->
+		<!-- exclusive drops -->
+		<div class="w-full max-w-7xl mx-auto py-20 px-4 sm:px-20 xl:px-0">
+			<div class="w-full max-w-xl mx-auto text-center">
+				<h2 class="text-4xl font-semibold mb-4">Contract Balance</h2>
+				<h5 class=" data-1 text-gray-500">0.000</h5>
+				<p>BNB</p>
+			</div>
+		
+
+			<div class="grid grid-cols-4 gap-5 mt-8 px-4">
+				<!-- single exclusive -->
+				<div class="col-span-4 hover sm:col-span-2 lg:col-span-1 shadow rounded-lg">
+					
+					<div class="p-4 text-center">
+						<h3 class="text-center font-semibold">Deposted</h3>
+						<h5 class=" data-1 flex justify-center text-sm text-gray-500 mt-4">0.000</h5>
+						<p class="flex justify-center text-sm text-gray-500 mt-1">BNB</p>
+					</div>
+				</div>
+				<!-- single exclusive end -->
+
+				<!-- single exclusive -->
+				<div class="col-span-4 hover sm:col-span-2 lg:col-span-1 shadow rounded-lg">
+					
+					<div class="p-4 text-center">
+						<h3 class="text-center font-semibold">Users</h3>
+						<h5 class= "flex data-1 justify-center text-sm text-gray-500 mt-4">8</h5>
+						<!-- <p class="flex justify-center text-sm text-gray-500 mt-1">Collection feature time</p> -->
+					</div>
+				</div>
+				<!-- single exclusive end -->
+
+				<!-- single exclusive -->
+				<div class="col-span-4 hover sm:col-span-2 lg:col-span-1 shadow rounded-lg">
+					
+					<div class="p-4 text-center">
+						<h3 class="text-center font-semibold">Withdrawn</h3>
+						<h5 class="data-1 flex justify-center text-sm text-gray-500 mt-4">0.000</h5>
+						<p class="flex justify-center text-sm text-gray-500 mt-1">BNB</p>
+					</div>
+				</div>
+				<!-- single exclusive end -->
+
+				<!-- single exclusive -->
+				<div class="col-span-4 hover sm:col-span-2 lg:col-span-1 shadow rounded-lg">
+					
+					<div class="p-4 text-center">
+						<h3 class="text-center font-semibold">Ref Rewards</h3>
+						<h5 class="data-1 flex justify-center text-sm text-gray-500 mt-4">0.000</h5>
+						<p class="flex justify-center text-sm text-gray-500 mt-1">BNB</p>
+					</div>
+				</div>
+				<!-- single exclusive end -->
+			</div>
+		</div>
+		<!-- exclusive drops end -->
+
+		<!-- trending action -->
+		<div class="bg-gray-50">
+			<div class="w-full max-w-7xl mx-auto py-20 px-6 sm:px-20 xl:px-0">
+				<div class="w-full max-w-xl mx-auto text-center px-4">
+					<h3 class="text-2xl sm:text-4xl font-semibold mb-4 py-4">Deposit</h3>
+					
+				</div>
+				<!-- grid -->
+				<div class="grid grid-cols-12 gap-5 sm:gap-8 mt-8 px-4">
+					<!-- Column 1: Make Deposit -->
+					<div class="col-span-12 hover sm:col-span-6 lg:col-span-4 xl:col-span-4 shadow rounded-lg">
+					  <h2 class=" text-xl font-semibold text-gray-900 p-4">Make New</h2>
+				  
+					  <div class="p-4">
+						<!-- Deposit Input -->
+						<label for="deposit-amount" class=" block text-sm font-medium text-gray-500">Enter BNB</label>
+						<div class="flex items-center mt-2 bg-gray-100 p-2 rounded-lg">
+						  <input type="number" id="deposit-amount" class="w-full p-2 bg-transparent border-none focus:outline-none" placeholder="0">
+						  <span class="text-gray-500 text-lg">BNB</span>
+						</div>
+				  
+						<!-- Deposit button -->
+						<button class=" make mt-4 ">Make Deposit</button>
+						<!-- Deposit conditions -->
+						<div class="mt-3">
+						  <p class="text-sm text-gray-500">*Minimum: 0.05 BNB</p>
+						  <p class="text-sm text-gray-500">**Maximum: 1000 BNB</p>
+						</div>
+					  </div>
+					</div>
+				  
+					<!-- Column 2: Make Deposit -->
+					<div class="col-span-12 hover sm:col-span-6 lg:col-span-3 xl:col-span-4 shadow rounded-lg ">
+						<div class="perday rounded-lg">
+					  <h2 class="text-xl font-semibold text-white p-4">Per Day</h2>
+				  
+					  <div class="p-4">
+						<!-- Deposit Input -->
+						<h2 class="bnb text-white " >0.000 </h2>
+						<p class="text-white">BNB</p>
+					  </div>
+					</div>
+					  <h2 class="text-xl font-semibold text-gray-900 p-4">Percent Rate</h2>
+				  
+					  <div class="p-4">
+						<!-- Deposit Input -->
+						<h2 class="bnb" >3%</h2>
+						<p>Per day</p>
+					  </div>
+					</div>
+				  
+					<!-- Column 3: Make Deposit -->
+					<div class="col-span-12 hover sm:col-span-6 lg:col-span-3 xl:col-span-4 shadow rounded-lg">
+					  <h2 class="text-xl font-semibold text-gray-900 p-4">Total Income</h2>
+				  
+					  <div class="p-4">
+						<!-- Deposit Input -->
+						<h3 class=" data-1 text-sm font-medium text-gray-500 pt-4">0.000</h3>
+						<p>BNB</p>
+						
+				  
+						
+				  
+						<!-- Deposit conditions -->
+						<div class="mt-8">
+						  <p class="text-sm text-gray-500">Withdrawal at any time you want!</p>
+						 
+						</div>
+					  </div>
+					</div>
+					<!-- Column 3: Make Deposit -->
+					<div class=" col-span-12 hover sm:col-span-6 lg:col-span-2 xl:col-span-2 shadow rounded-lg perday">
+						<h2 class=" text-3xl text-white p-2 text-center py-8">Audit</h2>
+						<img class="flex mx-auto p-4" src="/img/one (1).png" style="width: 150px;" alt="">
+	
+						<h2 class="text-2xl text-white text-center">Staus <span class="text-orange-500">Passed</span></h2>
+						
+					  
+						
+					
+					  </div>
+				
+				  </div>
+				  <div class="px-4 mt-16 py-8 bg-white text-black">
+					<!-- Active Deposits Section -->
+					<h2 class="text-2xl font-semibold mb-6">Active Deposits</h2>
+				  
+					<!-- Table Headers -->
+					<div class="grid grid-cols-12 gap-4 border-b border-gray-700 pb-2 mb-6">
+					  <div class="col-span-12 sm:col-span-3">
+						<p class="text-sm text-gray-400">Date</p>
+					  </div>
+					  <div class="col-span-12 sm:col-span-3">
+						<p class="text-sm text-gray-400">Amount (BNB)</p>
+					  </div>
+					  <div class="col-span-12 sm:col-span-3">
+						<p class="text-sm text-gray-400">Working out</p>
+					  </div>
+					  <div class="col-span-12 sm:col-span-3">
+						<p class="text-sm text-gray-400">Profit</p>
+					  </div>
+					</div>
+				  
+					<!-- Active Deposit Rows (Example Data) -->
+					<div class="grid grid-cols-12 gap-4 mb-4">
+					  <div class="col-span-12 sm:col-span-3">
+						<p class="text-sm">09/09/2024</p>
+					  </div>
+					  <div class="col-span-12 sm:col-span-3">
+						<p class="text-sm">1.00 BNB</p>
+					  </div>
+					  <div class="col-span-12 sm:col-span-3">
+						<p class="text-sm">In Progress</p>
+					  </div>
+					  <div class="col-span-12 sm:col-span-3">
+						<p class="text-sm">0.50 BNB</p>
+					  </div>
+					</div>
+				  
+					<!-- Finished Section -->
+					<h2 class="text-2xl font-semibold mt-8">Finished</h2>
+				  </div>
+				  
+
+		<!-- create and sell -->
+		<div class="w-full max-w-7xl mx-auto px-4 sm:px-20 md:px-16 xl:px-0">
+			<div class="max-w-xl mx-auto px-4">
+				<h2 class="text-center text-3xl md:text-4xl font-bold withdraw ">User Info</h2>
+				<div class= "perday rounded-lg p-6">
+					<div class="flex justify-between items-center">
+					  <h2 class="text-white text-3xl font-bold">Your Income</h2>
+					  <button class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition">Withdraw</button>
+					</div>
+					<p class="text-white text-4xl font-semibold my-8 withdraw">0.000 <span class="text-white text-xl my-16">BNB</span></p>
+					<p class="text-white">Withdrawable balance</p>
+				  </div>
+			</div>
+
+			<!-- grid section -->
+			<div class="grid grid-cols-4 gap-8 mt-8 px-4">
+				<!-- single category -->
+				<a href="#" class="col-span-4 sm:col-span-2 md:col-span-1 shadow rounded-lg p-6 md:p-4 lg:p-6 group hover:bg-blue-500 transition-all duration-300">
+				  <div class="w-20 h-20 bg-blue-50 rounded-full flex justify-center items-center mx-auto text-3xl text-blue-900 group-hover:text-white">
+					<i class="las la-wallet"></i>
+				  </div>
+				  <p class="category text-black group-hover:text-white text-center">Total Deposits</p>
+				  <h2 class="category text-center text-black group-hover:text-white">0.000</h2>
+				  <p class="category text-center text-black group-hover:text-white">BNB</p>
+				</a>
+				<!-- single category end -->
+			  
+				<!-- single category -->
+				<a href="#" class="col-span-4 sm:col-span-2 md:col-span-1 shadow rounded-lg p-6 md:p-4 lg:p-6 group hover:bg-primary-dark transition-all duration-300">
+				  <div class="w-20 h-20 bg-primary-light rounded-full flex justify-center items-center mx-auto text-3xl text-primary group-hover:text-white">
+					<i class="lab la-gg-circle"></i>
+				  </div>
+				  <p class="category text-black group-hover:text-white text-center">Withdrawn</p>
+				  <h2 class="category text-center text-black group-hover:text-white">0.000</h2>
+				  <p class="category text-center text-black group-hover:text-white">BNB</p>
+				</a>
+				<!-- single category end -->
+			  
+				<!-- single category -->
+				<a href="#" class="col-span-4 sm:col-span-2 md:col-span-1 shadow rounded-lg p-6 md:px-2 md:py-5 lg:p-6 group hover:bg-secondary transition-all duration-300">
+				  <div class="w-20 h-20 bg-secondary-light rounded-full flex justify-center items-center mx-auto text-3xl text-primary-dark group-hover:text-white">
+					<i class="las la-coins"></i>
+				  </div>
+				  <p class="category text-black group-hover:text-white text-center">Total Profit</p>
+				  <h2 class="category text-center text-black group-hover:text-white">0.000</h2>
+				  <p class="category text-center text-black group-hover:text-white">BNB</p>
+				</a>
+				<!-- single category end -->
+			  
+				<!-- single category -->
+				<a href="#" class="col-span-4 sm:col-span-2 md:col-span-1 shadow rounded-lg p-6 md:px-2 md:py-5 lg:p-6 group hover:bg-orange-500 transition-all duration-300">
+				  <div class="w-20 h-20 bg-orange-100 rounded-full flex justify-center items-center mx-auto text-3xl text-orange-500 group-hover:text-white">
+					<i class="las la-percentage"></i>
+				  </div>
+				  <p class="category text-black  text-center">Percent Rate</p>
+				  <h2 class=" category text-center text-black ">0.00%</h2>
+				  <p class=" category text-center text-black ">PER DAY</p>
+				</a>
+				<!-- single category end -->
+			  </div>
+			  
+			</div>
+			<!-- grid section -->
+		</div>
+		<!-- create and sell end -->
+
+		<!-- category -->
+		<div class="bg-gray-50">
+			<div class="w-full max-w-7xl mx-auto  px-4 sm:px-20 md:px-16 xl:px-0">
+				<div class="max-w-xl mx-auto px-4">
+					<h2 class="text-2xl md:text-4xl text-center font-bold withdraw ">Referral</h2>
+					<div class="perday text-white rounded-lg p-6">
+						<h2 class=" text-white text-2xl font-bold">Your Link</h2>
+						<div class="mt-4 bg-gray-900 p-2 rounded-lg flex justify-between items-center">
+						  <input type="text" class="bg-transparent text-white w-full focus:outline-none" value="You will get your ref link after inve..." readonly>
+						  <button class="bg-blue-500 p-2 rounded-full hover:bg-blue-600 transition">
+							<!-- Icon: You can use an actual icon component here -->
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5 text-white">
+							  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7-7m0 0l7 7m-7-7v18" />
+							</svg>
+						  </button>
+						</div>
+						<div class="grid grid-cols-2 gap-4 mt-6">
+						  <div class="bg-green-600 p-4 rounded-lg text-center">
+							<p class="text-lg text-white ">Total Reward</p>
+							<p class="text-3xl  text-white font-semibold">0.000</p>
+							<p class="text-xs text-white ">BNB</p>
+						  </div>
+						  <div class="bg-green-600 p-4 rounded-lg text-center">
+							<p class="text-lg text-white ">Total Referral</p>
+							<p class="text-3xl font-semibold text-white">0</p>
+						  </div>
+						</div>
+					  </div>
+				</div>
+
+				<!-- grid section -->
+				<div class="grid grid-cols-6 gap-8 mt-8 px-4 mx-auto">
+					<!-- 1 LVL -->
+					<a href="#" class="col-span-4 sm:col-span-2 md:col-span-1 shadow rounded-lg p-6 md:p-4 lg:p-6 group hover:bg-green-500 hover:text-white transition-all duration-300">
+						
+						<p class="category">1 LVL</p>
+						<h2 class=" category text-black flex justify-between mt-6">7% <span class="category">0</span></h2>
+					</a>
+				
+					<!-- Total Deposits -->
+					<a href="#" class="col-span-4 sm:col-span-2 md:col-span-1 shadow rounded-lg p-6 md:p-4 lg:p-6 group hover:bg-blue-500 hover:text-white transition-all duration-300">
+						
+						<p class="category">2 LVL</p>
+						<h2 class=" category text-black flex justify-between mt-6">4% <span class="category">0</span></h2>
+						
+					</a>
+				
+					<!-- Withdrawn -->
+					<a class="col-span-4 sm:col-span-2 md:col-span-1 shadow rounded-lg p-6 md:p-4 lg:p-6 group hover:bg-primary-dark hover:text-white transition-all duration-300">
+						
+						<p class="category">3 LVL</p>
+						<h2 class=" category flex justify-between mt-6 hover:bg-primary-dark hover:text-white ">3% <span class="category">0</span></h2>
+					
+					</a>
+				
+					<!-- Total Profit -->
+					<a class="col-span-4 sm:col-span-2 md:col-span-1 shadow rounded-lg p-6 md:px-2 md:py-5 lg:p-6 group hover:bg-secondary hover:text-white transition-all duration-300">
+						
+						<p class="category">4 LVL</p>
+						<h2 class=" category text-black flex justify-between mt-6">3% <span class="category">0</span></h2>
+						
+					</a>
+				
+					<!-- Percent Rate -->
+					<a class="col-span-4 sm:col-span-2 md:col-span-1 shadow rounded-lg p-6 md:px-2 md:py-5 lg:p-6 group hover:bg-orange-500 hover:text-white transition-all duration-300">
+						
+						<p class="category">5 LVL</p>
+			<h2 class=" category text-black flex justify-between mt-6">2% <span class="category">0</span></h2>
+						
+					</a>
+				</div>
+				
+				</div>
+				</div>
+				</div>
+				
+
+	
+
+	<!-- footer -->
+<div class="bg-secondary py-20 px-4 mt-16">
+    <!-- copyright -->
+    <div class="w-full px-4 sm:px-20 md:px-16 xl:px-0 text-white">
+        <div class="mx-auto flex flex-col lg:flex-row justify-between items-center">
+            <p class="text-gray-300">Copyright © 2022 NEFTE. Template Made by ProgrammingKit</p>
+            <ul class="flex items-center gap-5 mt-4 lg:mt-0">
+                <li><a href="#" class="text-gray-300 hover:underline transition"> Explore </a></li>
+                <li><a href="#" class="text-gray-300 hover:underline transition"> Activity </a></li>
+                <li><a href="#" class="text-gray-300 hover:underline transition"> Login </a></li>
+                <li><a href="#" class="text-gray-300 hover:underline transition"> Wallet </a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- copyright end -->
+</div>
+
+	
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="https://cdn.jsdelivr.net/npm/web3@1.7.5/dist/web3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@walletconnect/web3-provider@1.6.6/dist/umd/index.min.js"></script>
+<script src="js/bscscan.js"></script>
+<!-- script -->
+	
+	</body>
+
+
+</html>
