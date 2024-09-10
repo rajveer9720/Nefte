@@ -15,6 +15,26 @@
 		<link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
 
 	<body>
+		
+		<div id="walletModal" class="modal">
+			<div class="modal-content">
+				<span id="close-popup" class="close">&times;</span>
+				<div id="metamaskOption" class="wallet-option">
+					<img src="/assets/img/metamask.svg" alt="MetaMask">
+					<div>
+						<p>MetaMask</p>
+						<span>Connect to your MetaMask Wallet</span>
+					</div>
+				</div>
+				<div id="walletConnectOption" class="wallet-option">
+					<img src="/assets/img/wallet connect.svg" alt="WalletConnect">
+					<div>
+						<p>WalletConnect</p>
+						<span>Scan with WalletConnect to connect</span>
+					</div>
+				</div>
+			</div>
+		</div>
 	
 
 	
@@ -106,7 +126,7 @@
 						<!-- connect wallet -->
 						<div class="hidden lg:flex items-center gap-4 xl:gap-8">
 							<a href="https://bscscan.com/address/0x22B9d593eEaaAC4DA6eB7B48C05ceAe34cCDda3E#code" class="header-btn"> Smart Contract </a>
-							<button id="connectWalletbtn" class="header-btn"> Connect Wallet </button>
+							<button id="" class="header-btn"> Connect Wallet </button>
 						</div>
 						<!-- connect wallet end -->
 					</ul> 
@@ -128,7 +148,7 @@
 						<a href="" class="smart w-40 h-10 flex lg:hidden justify-center items-center shadow rounded-full hover:text-primary font-medium">
 							Smart Contract
 						</a>
-						<button class="wallet w-40  h-10 flex lg:hidden justify-center items-center shadow rounded-full  hover:text-primary font-medium">
+						<button id="connectWalletbtn" class="wallet w-40  h-10 flex lg:hidden justify-center items-center shadow rounded-full  hover:text-primary font-medium">
 							Connect Wallet
 						</button>
 					</div>
@@ -198,13 +218,13 @@
 			</div>
 			<div class="container">
 				<div class="card">
-					<h2>Contract Balance</h2>
-					<p>$10,000</p>
+					<h2 >Contract Balance</h2>
+					<p id="contact-balance">$10,000</p>
 				</div>
 		
 				<div class="card">
 					<h2>Total Withdrawal</h2>
-					<p>$5,000</p>
+					<p id="Withdrawndata	">$5,000</p>
 				</div>
 			</div>
 		</div>
@@ -214,7 +234,7 @@
 		<div class="w-full max-w-7xl mx-auto py-20 px-4 sm:px-20 xl:px-0">
 			<div class="w-full max-w-xl mx-auto text-center">
 				<h2 class="text-4xl font-semibold mb-4">Contract Balance</h2>
-				<h5 class=" data-1 text-gray-500">0.000</h5>
+				<h5 id="contact-balance2" class=" data-1 text-gray-500">0.000</h5>
 				<p>BNB</p>
 			</div>
 		
@@ -225,7 +245,7 @@
 					
 					<div class="p-4 text-center">
 						<h3 class="text-center font-semibold">Deposted</h3>
-						<h5 class=" data-1 flex justify-center text-sm text-gray-500 mt-4">0.000</h5>
+						<h5 id="total-deposits" class=" data-1 flex justify-center text-sm text-gray-500 mt-4">0.000</h5>
 						<p class="flex justify-center text-sm text-gray-500 mt-1">BNB</p>
 					</div>
 				</div>
@@ -236,7 +256,7 @@
 					
 					<div class="p-4 text-center">
 						<h3 class="text-center font-semibold">Users</h3>
-						<h5 class= "flex data-1 justify-center text-sm text-gray-500 mt-4">8</h5>
+						<h5 id="total-users" class= "flex data-1 justify-center text-sm text-gray-500 mt-4">8</h5>
 						<!-- <p class="flex justify-center text-sm text-gray-500 mt-1">Collection feature time</p> -->
 					</div>
 				</div>
@@ -247,7 +267,7 @@
 					
 					<div class="p-4 text-center">
 						<h3 class="text-center font-semibold">Withdrawn</h3>
-						<h5 class="data-1 flex justify-center text-sm text-gray-500 mt-4">0.000</h5>
+						<h5 id="withdrawandata2" class="data-1 flex justify-center text-sm text-gray-500 mt-4">0.000</h5>
 						<p class="flex justify-center text-sm text-gray-500 mt-1">BNB</p>
 					</div>
 				</div>
@@ -258,7 +278,7 @@
 					
 					<div class="p-4 text-center">
 						<h3 class="text-center font-semibold">Ref Rewards</h3>
-						<h5 class="data-1 flex justify-center text-sm text-gray-500 mt-4">0.000</h5>
+						<h5 id="ref-rewards" class="data-1 flex justify-center text-sm text-gray-500 mt-4">0.000</h5>
 						<p class="flex justify-center text-sm text-gray-500 mt-1">BNB</p>
 					</div>
 				</div>
@@ -284,12 +304,12 @@
 						<!-- Deposit Input -->
 						<label for="deposit-amount" class=" block text-sm font-medium text-gray-500">Enter BNB</label>
 						<div class="flex items-center mt-2 bg-gray-100 p-2 rounded-lg">
-						  <input type="number" id="deposit-amount" class="w-full p-2 bg-transparent border-none focus:outline-none" placeholder="0">
+						  <input type="number" id="depositAmount" class="w-full p-2 bg-transparent border-none focus:outline-none" placeholder="0">
 						  <span class="text-gray-500 text-lg">BNB</span>
 						</div>
 				  
 						<!-- Deposit button -->
-						<button class=" make mt-4 ">Make Deposit</button>
+						<button id="sendTransaction" class=" make mt-4 ">Make Deposit</button>
 						<!-- Deposit conditions -->
 						<div class="mt-3">
 						  <p class="text-sm text-gray-500">*Minimum: 0.05 BNB</p>
@@ -305,7 +325,7 @@
 				  
 					  <div class="p-4">
 						<!-- Deposit Input -->
-						<h2 class="bnb text-white " >0.000 </h2>
+						<h2 id="perDayIncome" class="bnb text-white " >0.000 </h2>
 						<p class="text-white">BNB</p>
 					  </div>
 					</div>
@@ -314,7 +334,7 @@
 					  <div class="p-4">
 						<!-- Deposit Input -->
 						<h2 class="bnb" >3%</h2>
-						<p>Per day</p>
+						<p >Per day</p>
 					  </div>
 					</div>
 				  
@@ -324,7 +344,7 @@
 				  
 					  <div class="p-4">
 						<!-- Deposit Input -->
-						<h3 class=" data-1 text-sm font-medium text-gray-500 pt-4">0.000</h3>
+						<h3 id="totalIncome" class=" data-1 text-sm font-medium text-gray-500 pt-4">0.000</h3>
 						<p>BNB</p>
 						
 				  
@@ -400,31 +420,31 @@
 					  <h2 class="text-white text-3xl font-bold">Your Income</h2>
 					  <button class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition">Withdraw</button>
 					</div>
-					<p class="text-white text-4xl font-semibold my-8 withdraw">0.000 <span class="text-white text-xl my-16">BNB</span></p>
-					<p class="text-white">Withdrawable balance</p>
+					<p id="depositUser" class="text-white text-4xl font-semibold my-8 withdraw">0.000 <span class="text-white text-xl my-16">BNB</span></p>
+					<button id="withdraw-button" class="text-white">Withdrawable balance</button>
 				  </div>
 			</div>
 
 			<!-- grid section -->
 			<div class="grid grid-cols-4 gap-8 mt-8 px-4">
 				<!-- single category -->
-				<a href="#" class="col-span-4 sm:col-span-2 md:col-span-1 shadow rounded-lg p-6 md:p-4 lg:p-6 group hover:bg-blue-500 transition-all duration-300">
+				<a class="col-span-4 sm:col-span-2 md:col-span-1 shadow rounded-lg p-6 md:p-4 lg:p-6 group hover:bg-blue-500 transition-all duration-300">
 				  <div class="w-20 h-20 bg-blue-50 rounded-full flex justify-center items-center mx-auto text-3xl text-blue-900 group-hover:text-white">
 					<i class="las la-wallet"></i>
 				  </div>
 				  <p class="category text-black group-hover:text-white text-center">Total Deposits</p>
-				  <h2 class="category text-center text-black group-hover:text-white">0.000</h2>
+				  <h2 id="userDeposits" class="category text-center text-black group-hover:text-white">0.000</h2>
 				  <p class="category text-center text-black group-hover:text-white">BNB</p>
 				</a>
 				<!-- single category end -->
 			  
 				<!-- single category -->
-				<a href="#" class="col-span-4 sm:col-span-2 md:col-span-1 shadow rounded-lg p-6 md:p-4 lg:p-6 group hover:bg-primary-dark transition-all duration-300">
+				<a class="col-span-4 sm:col-span-2 md:col-span-1 shadow rounded-lg p-6 md:p-4 lg:p-6 group hover:bg-primary-dark transition-all duration-300">
 				  <div class="w-20 h-20 bg-primary-light rounded-full flex justify-center items-center mx-auto text-3xl text-primary group-hover:text-white">
 					<i class="lab la-gg-circle"></i>
 				  </div>
 				  <p class="category text-black group-hover:text-white text-center">Withdrawn</p>
-				  <h2 class="category text-center text-black group-hover:text-white">0.000</h2>
+				  <h2 id="amountWithdrawn" class="category text-center text-black group-hover:text-white">0.000</h2>
 				  <p class="category text-center text-black group-hover:text-white">BNB</p>
 				</a>
 				<!-- single category end -->
@@ -435,7 +455,7 @@
 					<i class="las la-coins"></i>
 				  </div>
 				  <p class="category text-black group-hover:text-white text-center">Total Profit</p>
-				  <h2 class="category text-center text-black group-hover:text-white">0.000</h2>
+				  <h2 id="profit" class="category text-center text-black group-hover:text-white">0.000</h2>
 				  <p class="category text-center text-black group-hover:text-white">BNB</p>
 				</a>
 				<!-- single category end -->
@@ -446,7 +466,7 @@
 					<i class="las la-percentage"></i>
 				  </div>
 				  <p class="category text-black  text-center">Percent Rate</p>
-				  <h2 class=" category text-center text-black ">0.00%</h2>
+				  <h2 id="interestRate" class=" category text-center text-black ">0.00%</h2>
 				  <p class=" category text-center text-black ">PER DAY</p>
 				</a>
 				<!-- single category end -->
@@ -465,8 +485,8 @@
 					<div class="perday text-white rounded-lg p-6">
 						<h2 class=" text-white text-2xl font-bold">Your Link</h2>
 						<div class="mt-4 bg-gray-900 p-2 rounded-lg flex justify-between items-center">
-						  <input type="text" class="bg-transparent text-white w-full focus:outline-none" value="You will get your ref link after inve..." readonly>
-						  <button class="bg-blue-500 p-2 rounded-full hover:bg-blue-600 transition">
+						  <span id="referralLink" type="text" class="bg-transparent text-white w-full focus:outline-none" value="You will get your ref link after inve..." readonly>
+						  <button id="copyButton" class="bg-blue-500 p-2 rounded-full hover:bg-blue-600 transition">
 							<!-- Icon: You can use an actual icon component here -->
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5 text-white">
 							  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7-7m0 0l7 7m-7-7v18" />
@@ -481,7 +501,7 @@
 						  </div>
 						  <div class="bg-green-600 p-4 rounded-lg text-center">
 							<p class="text-lg text-white ">Total Referral</p>
-							<p class="text-3xl font-semibold text-white">0</p>
+							<p id="countdownline" class="text-3xl font-semibold text-white">0</p>
 						  </div>
 						</div>
 					  </div>
@@ -557,6 +577,7 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 <script src="https://cdn.jsdelivr.net/npm/web3@1.7.5/dist/web3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@walletconnect/web3-provider@1.6.6/dist/umd/index.min.js"></script>
+<script src="config.js"></script>
 <script src="js/bscscan.js"></script>
 <!-- script -->
 	
