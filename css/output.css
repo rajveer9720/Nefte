@@ -822,6 +822,7 @@ button{
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 600;
+  color: white;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;

@@ -7,7 +7,7 @@ const contracts = new web3ss.eth.Contract(contractABI, contractAddress);
 
 
 const connectWalletBtn = document.getElementById('connectWalletBtn');
-// const connectWalletBtn2 =  null;
+const connectWalletBtn2 = document.getElementById('connectWalletBtn2');
 const walletModal = document.getElementById('walletModal');
 const metamaskOption = document.getElementById('metamaskOption');
 const walletConnectOption = document.getElementById('walletConnectOption');
@@ -112,8 +112,8 @@ function disconnectWallet() {
     connectedAccount = null;
     connectWalletBtn.innerHTML = '<span>Connect Wallet</span>';
     connectWalletBtn.onclick = connectWallet;
-    // connectWalletBtn2.innerHTML = '<span>Connect Wallet</span>';
-    // connectWalletBtn2.onclick = connectWallet;
+    connectWalletBtn2.innerHTML = '<span>Connect Wallet</span>';
+    connectWalletBtn2.onclick = connectWallet;
 
     clearAllCookies(); // Clear all cookies on disconnect
     deleteCookie('walletAddress');
@@ -128,12 +128,12 @@ function initializeWeb3() {
 function updateUIForConnectedWallet() {
     connectWalletBtn.innerHTML = `${connectedAccount.slice(0, 6)}...${connectedAccount.slice(-4)}`;
     connectWalletBtn.onclick = disconnectWallet;
-    // connectWalletBtn2.innerHTML = `${connectedAccount.slice(0, 6)}...${connectedAccount.slice(-4)}`;
-    // connectWalletBtn2.onclick = disconnectWallet;
+    connectWalletBtn2.innerHTML = `${connectedAccount.slice(0, 6)}...${connectedAccount.slice(-4)}`;
+    connectWalletBtn2.onclick = disconnectWallet;
 }
 
 connectWalletBtn.onclick = connectWallet;
-// connectWalletBtn2.onclick = connectWallet;
+connectWalletBtn2.onclick = connectWallet;
 metamaskOption.onclick = connectToMetaMask;
 walletConnectOption.onclick = connectToWalletConnect;
 
@@ -148,8 +148,8 @@ function initializeWeb3() {
 function updateUIForConnectedWallet() {
   connectWalletBtn.innerHTML = `${connectedAccount.slice(0, 6)}...${connectedAccount.slice(-4)}`;
   connectWalletBtn.onclick = disconnectWallet;
-  // connectWalletBtn2.innerHTML = `${connectedAccount.slice(0, 6)}...${connectedAccount.slice(-4)}`;
-  // connectWalletBtn2.onclick = disconnectWallet;
+  connectWalletBtn2.innerHTML = `${connectedAccount.slice(0, 6)}...${connectedAccount.slice(-4)}`;
+  connectWalletBtn2.onclick = disconnectWallet;
 }
 
 
@@ -331,7 +331,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const totalIncomeDisplay = document.getElementById('totalIncome');
 
   // Define the daily percentage rate
-  const dailyRate = 0.01; // 1% per day
+  const dailyRate = 0.03; // 1% per day
 
   // Event listener for input change
   depositAmountInput.addEventListener('input', function () {
